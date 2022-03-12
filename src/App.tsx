@@ -1,15 +1,15 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import TestComponent from "./Components/TestComponent/TestComponent";
-import { theme } from "./theme";
+import TestComponent from './Components/TestComponent/TestComponent';
+import { theme } from './theme';
 
 function App() {
-    return (
-        <ThemeProvider theme={theme}>
-            <TestComponent />
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider theme={theme}>
+      <TestComponent />
+    </ThemeProvider>
+  );
 }
 
 export default App;
