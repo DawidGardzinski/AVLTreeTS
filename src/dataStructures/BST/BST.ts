@@ -115,6 +115,55 @@ export class BST {
     return [];
   }
 
+  levelOrder(node: Node | null = this.root) {
+    if (!node) return;
+    const result = [];
+    const queue: Node[] = [];
+    queue.push(node);
+    while (!(queue.length === 0)) {
+      const currentNode = queue.shift();
+      result.push(currentNode?.key);
+      if (currentNode && currentNode.left !== null)
+        queue.push(currentNode.left);
+      if (currentNode && currentNode.right !== null)
+        queue.push(currentNode.right);
+    }
+    return result;
+  }
+
+  levelOrderWithNulls(node: Node | null = this.root) {
+    if (!node) return;
+    const result: (number | null)[] = [];
+    const height = node.height || 0;
+    const numOfLevels = height + 1;
+    const numOfNodes = Math.pow(2, numOfLevels) - 1;
+    let currentLevel = 1;
+    let numOfNodesInCurrentLevel = 1;
+    let usedNodesInLevel = 0;
+
+    const queue: (Node | null)[] = [];
+    queue.push(node);
+    for (let i = 0; i < numOfNodes; i++) {
+      if (usedNodesInLevel === numOfNodesInCurrentLevel) {
+        currentLevel++;
+        numOfNodesInCurrentLevel = Math.pow(2, currentLevel - 1);
+        usedNodesInLevel = 0;
+      }
+
+      const currentNode = queue.shift();
+      if (currentLevel === numOfLevels) {
+        result.push(currentNode?.key ?? null);
+      } else {
+        result.push(currentNode?.key ?? null);
+        queue.push(currentNode ? currentNode.left : null);
+        queue.push(currentNode ? currentNode.right : null);
+      }
+
+      usedNodesInLevel++;
+    }
+    return result;
+  }
+
   getRoot() {
     return this.root;
   }
