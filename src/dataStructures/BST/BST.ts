@@ -1,21 +1,14 @@
 import { Node } from '../Node/Node';
 
-interface IBST {
-  insert: (key: number) => void;
-  remove: (key: number) => void;
-  search: (key: number) => Node | null;
-  getRoot: () => Node | null;
-}
-
-export class BST implements IBST {
+export class BST {
   protected root: Node | null;
   constructor() {
     this.root = null;
   }
 
-  protected findMinNode(node: Node): Node {
+  protected minValueNode(node: Node): Node {
     if (!node.left) return node;
-    else return this.findMinNode(node.left);
+    else return this.minValueNode(node.left);
   }
 
   protected searchNode(node: Node | null, key: number): Node | null {
@@ -63,7 +56,7 @@ export class BST implements IBST {
       return node;
     }
 
-    const helper = this.findMinNode(node.right);
+    const helper = this.minValueNode(node.right);
     node.key = helper.key;
 
     node.right = this.removeNode(node.right, helper.key);
@@ -87,6 +80,39 @@ export class BST implements IBST {
 
   search(key: number) {
     return this.searchNode(this.root, key);
+  }
+
+  preOrder(node: Node | null = this.root): number[] {
+    if (node !== null) {
+      return [
+        node.key,
+        ...this.preOrder(node.left),
+        ...this.preOrder(node.right),
+      ];
+    }
+    return [];
+  }
+
+  inOrder(node: Node | null = this.root): number[] {
+    if (node !== null) {
+      return [
+        ...this.inOrder(node.left),
+        node.key,
+        ...this.inOrder(node.right),
+      ];
+    }
+    return [];
+  }
+
+  postOrder(node: Node | null = this.root): number[] {
+    if (node !== null) {
+      return [
+        ...this.inOrder(node.left),
+        ...this.inOrder(node.right),
+        node.key,
+      ];
+    }
+    return [];
   }
 
   getRoot() {

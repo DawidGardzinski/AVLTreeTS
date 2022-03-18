@@ -1651,7 +1651,7 @@ Node {
 
     expect(avlTreeTest3).toMatchInlineSnapshot(`
 AVLTree {
-  "_root": Node {
+  "root": Node {
     "height": 3,
     "key": 14,
     "left": Node {
@@ -1718,7 +1718,7 @@ AVLTree {
 
     expect(avlTreeTest4).toMatchInlineSnapshot(`
 AVLTree {
-  "_root": Node {
+  "root": Node {
     "height": 2,
     "key": 484,
     "left": Node {
@@ -1760,7 +1760,7 @@ AVLTree {
 
     expect(avlTreeTest5).toMatchInlineSnapshot(`
 AVLTree {
-  "_root": Node {
+  "root": Node {
     "height": 1,
     "key": 25,
     "left": Node {
