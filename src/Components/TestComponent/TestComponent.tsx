@@ -20,6 +20,14 @@ const TestComponent = () => {
   avlTree.insert(1);
   avlTree.insert(6);
 
+  const keysTest6 = [
+    1454, 2576, 634, 1108, 724, 2346, 1995, 4731, 4850, 5580, 9602, 250, 6748,
+  ];
+
+  keysTest6.forEach((key) => {
+    avlTree.insert(key);
+  });
+
   return (
     <Wrapper>
       <TreeGrid tree={avlTree} />
@@ -31,6 +39,7 @@ export default TestComponent;
 
 const Wrapper = styled.div`
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
