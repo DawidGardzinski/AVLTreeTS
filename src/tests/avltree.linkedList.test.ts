@@ -1562,9 +1562,9 @@ Node {
   });
 
   test('after some deletion', () => {
-    avlTreeTest1.delete(3);
-    avlTreeTest1.delete(16);
-    avlTreeTest1.delete(20);
+    avlTreeTest1.remove(3);
+    avlTreeTest1.remove(16);
+    avlTreeTest1.remove(20);
 
     expect(avlTreeTest1.getRoot()).toMatchInlineSnapshot(`
 Node {
@@ -1591,7 +1591,7 @@ Node {
 `);
 
     [45, 4, 28, 30, 13].forEach((key) => {
-      avlTreeTest2.delete(key);
+      avlTreeTest2.remove(key);
     });
 
     expect(avlTreeTest2.getRoot()).toMatchInlineSnapshot(`
@@ -1646,7 +1646,7 @@ Node {
     keysTest3
       .filter((key) => key % 2)
       .forEach((key) => {
-        avlTreeTest3.delete(key);
+        avlTreeTest3.remove(key);
       });
 
     expect(avlTreeTest3).toMatchInlineSnapshot(`
@@ -1713,7 +1713,7 @@ AVLTree {
     keysTest4
       .filter((key) => key % 4)
       .forEach((key) => {
-        avlTreeTest4.delete(key);
+        avlTreeTest4.remove(key);
       });
 
     expect(avlTreeTest4).toMatchInlineSnapshot(`
@@ -1755,7 +1755,7 @@ AVLTree {
     keysTest5
       .filter((key) => key % 5)
       .forEach((key) => {
-        avlTreeTest5.delete(key);
+        avlTreeTest5.remove(key);
       });
 
     expect(avlTreeTest5).toMatchInlineSnapshot(`

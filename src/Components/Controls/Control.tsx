@@ -14,7 +14,7 @@ const getControlLabel = (type: Type) => {
     case 'insert':
       return 'Insert:';
     case 'delete':
-      return 'Delete:';
+      return 'Remove:';
     case 'search':
       return 'Search:';
   }

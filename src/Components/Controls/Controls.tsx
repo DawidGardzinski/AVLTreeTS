@@ -12,7 +12,7 @@ interface ControlsProps {
 export const Controls = ({ tree }: ControlsProps) => {
   const { dispatch } = useMainContext();
   const testCb = (key: number) => {
-    console.log(key);
+    console.log(tree.getRoot());
 
     dispatch({ type: 'enableTreeRerender' });
   };
@@ -26,7 +26,13 @@ export const Controls = ({ tree }: ControlsProps) => {
         }}
       />
       <Divider />
-      <Control type="delete" cb={testCb} />
+      <Control
+        type="delete"
+        cb={(key: number) => {
+          tree.remove(key);
+          dispatch({ type: 'enableTreeRerender' });
+        }}
+      />
       <Divider />
       <Control type="search" cb={testCb} />
       <Divider />
