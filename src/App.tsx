@@ -1,13 +1,16 @@
 import { ThemeProvider } from 'styled-components';
+import { VisualTree } from './Components/VisualTree/VisualTree';
+import { MainContextProvider } from './MainContext';
 
-import TestComponent from './Components/TestComponent/TestComponent';
 import { theme } from './theme';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <TestComponent />
-    </ThemeProvider>
+    <MainContextProvider>
+      <ThemeProvider theme={theme}>
+        <VisualTree />
+      </ThemeProvider>
+    </MainContextProvider>
   );
 }
 

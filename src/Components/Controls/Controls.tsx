@@ -1,15 +1,30 @@
 import styled from 'styled-components';
+import { BST } from '../../dataStructures/BST/BST';
+import { useMainContext } from '../../hooks/useMainContext';
 import { Dropdown } from '../common';
 import { Control } from './Control';
 import { More } from './More';
 
-export const Controls = () => {
+interface ControlsProps {
+  tree: BST;
+}
+
+export const Controls = ({ tree }: ControlsProps) => {
+  const { dispatch } = useMainContext();
   const testCb = (key: number) => {
     console.log(key);
+
+    dispatch({ type: 'enableTreeRerender' });
   };
   return (
     <Wrapper>
-      <Control type="insert" cb={testCb} />
+      <Control
+        type="insert"
+        cb={(key: number) => {
+          tree.insert(key);
+          dispatch({ type: 'enableTreeRerender' });
+        }}
+      />
       <Divider />
       <Control type="delete" cb={testCb} />
       <Divider />

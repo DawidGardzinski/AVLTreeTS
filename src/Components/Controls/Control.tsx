@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { KeyboardEvent, useState } from 'react';
 import styled from 'styled-components';
 import { Button, Input } from '../common';
 
@@ -42,6 +42,10 @@ export const Control = ({ type, cb }: ControlProps) => {
         value={inputValue}
         onChange={onChange}
         ml="s"
+        onKeyDown={(e: KeyboardEvent) => {
+          if (!cb || !inputValue || e.key !== 'Enter') return null;
+          cb(parseInt(inputValue));
+        }}
       />
       <Button variant="submit" ml="s" onClick={handleClick}>
         Execute
