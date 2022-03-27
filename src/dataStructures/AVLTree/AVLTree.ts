@@ -43,15 +43,15 @@ export class AVLTree extends BST {
     return root;
   }
 
-  private _deleteNode(key: number, root: Node | null): Node | null {
+  private _removeNode(key: number, root: Node | null): Node | null {
     if (root === null) {
       return root;
     }
 
     if (key < root.key) {
-      root.left = this._deleteNode(key, root.left);
+      root.left = this._removeNode(key, root.left);
     } else if (key > root.key) {
-      root.right = this._deleteNode(key, root.right);
+      root.right = this._removeNode(key, root.right);
     } else {
       if (!root.left && !root.right) {
         root = null;
@@ -62,7 +62,7 @@ export class AVLTree extends BST {
       } else {
         const inOrderSuccessor = this.minValueNode(root.right as Node);
         root.key = inOrderSuccessor.key;
-        root.right = this._deleteNode(inOrderSuccessor.key, root.right);
+        root.right = this._removeNode(inOrderSuccessor.key, root.right);
       }
     }
 
@@ -104,7 +104,7 @@ export class AVLTree extends BST {
     this.root = this._insertNode(key, this.root);
   }
 
-  delete(key: number): void {
-    this.root = this._deleteNode(key, this.root);
+  remove(key: number): void {
+    this.root = this._removeNode(key, this.root);
   }
 }
