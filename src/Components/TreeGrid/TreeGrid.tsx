@@ -2,6 +2,7 @@ import { ReactElement, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { BST } from '../../dataStructures/BST/BST';
 import { Connections } from '../Connections/Connections';
+import { Controls } from '../Controls/Controls';
 import { Node } from './Node';
 
 interface TreeGridProps {
@@ -61,6 +62,7 @@ export const TreeGrid = ({ tree }: TreeGridProps) => {
         </Grid>
       </Wrapper>
       <Connections nodeRefs={nodeRefs} arrayTree={levelOrderWithNulls} />
+      <Controls />
     </>
   );
 };
