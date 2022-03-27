@@ -1,7 +1,7 @@
 export class Node {
   public left: Node | null = null;
   public right: Node | null = null;
-  public height: number | null = null;
+  public height: number = 0;
 
   constructor(public key: number) {}
 

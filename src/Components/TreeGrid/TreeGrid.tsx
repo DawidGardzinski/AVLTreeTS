@@ -1,8 +1,8 @@
 import { ReactElement, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { BST } from '../../dataStructures/BST/BST';
+import { useMainContext } from '../../hooks/useMainContext';
 import { Connections } from '../Connections/Connections';
-import { Controls } from '../Controls/Controls';
 import { Node } from './Node';
 
 interface TreeGridProps {
@@ -13,8 +13,16 @@ export const TreeGrid = ({ tree }: TreeGridProps) => {
   const treeHeight = tree.getRoot()?.height;
   const levelOrderWithNulls = tree.levelOrderWithNulls();
   const [isLoading, setLoading] = useState(true);
+  const { state, dispatch } = useMainContext();
+  const { treeRerender } = state;
 
   const nodeRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  useEffect(() => {
+    if (treeRerender) {
+      dispatch({ type: 'disableTreeRerender' });
+    }
+  }, [treeRerender, dispatch]);
 
   useEffect(() => {
     nodeRefs.current = nodeRefs.current.slice(0, levelOrderWithNulls?.length);
@@ -24,7 +32,7 @@ export const TreeGrid = ({ tree }: TreeGridProps) => {
     }
   }, [levelOrderWithNulls]);
 
-  if (!treeHeight || !levelOrderWithNulls) return null;
+  if (treeHeight === undefined || !levelOrderWithNulls) return null;
   const numberOfLevels = treeHeight + 1;
   const numOfColumns = Math.pow(2, numberOfLevels - 1);
   const GridItems: ReactElement[] = [];
@@ -62,7 +70,6 @@ export const TreeGrid = ({ tree }: TreeGridProps) => {
         </Grid>
       </Wrapper>
       <Connections nodeRefs={nodeRefs} arrayTree={levelOrderWithNulls} />
-      <Controls />
     </>
   );
 };

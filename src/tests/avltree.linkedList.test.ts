@@ -86,7 +86,7 @@ Node {
     "height": 1,
     "key": 3,
     "left": Node {
-      "height": null,
+      "height": 0,
       "key": 1,
       "left": null,
       "right": null,
@@ -97,7 +97,7 @@ Node {
     "height": 2,
     "key": 16,
     "left": Node {
-      "height": null,
+      "height": 0,
       "key": 13,
       "left": null,
       "right": null,
@@ -107,7 +107,7 @@ Node {
       "key": 19,
       "left": null,
       "right": Node {
-        "height": null,
+        "height": 0,
         "key": 20,
         "left": null,
         "right": null,
@@ -143,7 +143,7 @@ Node {
       "height": 1,
       "key": 23,
       "left": Node {
-        "height": null,
+        "height": 0,
         "key": 22,
         "left": null,
         "right": null,
@@ -164,7 +164,7 @@ Node {
         "right": null,
       },
       "right": Node {
-        "height": null,
+        "height": 0,
         "key": 32,
         "left": null,
         "right": null,
@@ -174,13 +174,13 @@ Node {
       "height": 1,
       "key": 45,
       "left": Node {
-        "height": null,
+        "height": 0,
         "key": 42,
         "left": null,
         "right": null,
       },
       "right": Node {
-        "height": null,
+        "height": 0,
         "key": 46,
         "left": null,
         "right": null,
@@ -206,7 +206,7 @@ Node {
         "right": null,
       },
       "right": Node {
-        "height": null,
+        "height": 0,
         "key": 2,
         "left": null,
         "right": null,
@@ -240,7 +240,7 @@ Node {
           "right": null,
         },
         "right": Node {
-          "height": null,
+          "height": 0,
           "key": 9,
           "left": null,
           "right": null,
@@ -251,7 +251,7 @@ Node {
         "key": 11,
         "left": null,
         "right": Node {
-          "height": null,
+          "height": 0,
           "key": 12,
           "left": null,
           "right": null,
@@ -262,7 +262,7 @@ Node {
       "height": 2,
       "key": 17,
       "left": Node {
-        "height": null,
+        "height": 0,
         "key": 16,
         "left": null,
         "right": null,
@@ -277,7 +277,7 @@ Node {
           "right": null,
         },
         "right": Node {
-          "height": null,
+          "height": 0,
           "key": 20,
           "left": null,
           "right": null,
@@ -301,7 +301,7 @@ Node {
         "height": 1,
         "key": 155,
         "left": Node {
-          "height": null,
+          "height": 0,
           "key": 34,
           "left": null,
           "right": null,
@@ -353,7 +353,7 @@ Node {
         "key": 490,
         "left": null,
         "right": Node {
-          "height": null,
+          "height": 0,
           "key": 567,
           "left": null,
           "right": null,
@@ -363,7 +363,7 @@ Node {
         "height": 1,
         "key": 598,
         "left": Node {
-          "height": null,
+          "height": 0,
           "key": 590,
           "left": null,
           "right": null,
@@ -375,7 +375,7 @@ Node {
       "height": 2,
       "key": 772,
       "left": Node {
-        "height": null,
+        "height": 0,
         "key": 646,
         "left": null,
         "right": null,
@@ -390,7 +390,7 @@ Node {
           "right": null,
         },
         "right": Node {
-          "height": null,
+          "height": 0,
           "key": 987,
           "left": null,
           "right": null,
@@ -430,7 +430,7 @@ Node {
         "height": 1,
         "key": 36,
         "left": Node {
-          "height": null,
+          "height": 0,
           "key": 34,
           "left": null,
           "right": null,
@@ -441,7 +441,7 @@ Node {
         "height": 1,
         "key": 49,
         "left": Node {
-          "height": null,
+          "height": 0,
           "key": 42,
           "left": null,
           "right": null,
@@ -462,7 +462,7 @@ Node {
       "height": 1,
       "key": 72,
       "left": Node {
-        "height": null,
+        "height": 0,
         "key": 64,
         "left": null,
         "right": null,
@@ -477,7 +477,7 @@ Node {
         "key": 78,
         "left": null,
         "right": Node {
-          "height": null,
+          "height": 0,
           "key": 79,
           "left": null,
           "right": null,
@@ -487,7 +487,7 @@ Node {
         "height": 1,
         "key": 99,
         "left": Node {
-          "height": null,
+          "height": 0,
           "key": 98,
           "left": null,
           "right": null,
@@ -518,7 +518,7 @@ Node {
             "height": 1,
             "key": 208,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 32,
               "left": null,
               "right": null,
@@ -526,7 +526,7 @@ Node {
             "right": null,
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 295,
             "left": null,
             "right": null,
@@ -546,7 +546,7 @@ Node {
             "key": 578,
             "left": null,
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 633,
               "left": null,
               "right": null,
@@ -567,7 +567,7 @@ Node {
             "right": null,
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 1008,
             "left": null,
             "right": null,
@@ -578,7 +578,7 @@ Node {
           "key": 1108,
           "left": null,
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 1114,
             "left": null,
             "right": null,
@@ -602,7 +602,7 @@ Node {
             "right": null,
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 1728,
             "left": null,
             "right": null,
@@ -612,7 +612,7 @@ Node {
           "height": 1,
           "key": 2346,
           "left": Node {
-            "height": null,
+            "height": 0,
             "key": 2171,
             "left": null,
             "right": null,
@@ -635,7 +635,7 @@ Node {
             "height": 1,
             "key": 3359,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 3277,
               "left": null,
               "right": null,
@@ -643,7 +643,7 @@ Node {
             "right": null,
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 3717,
             "left": null,
             "right": null,
@@ -657,7 +657,7 @@ Node {
             "key": 4018,
             "left": null,
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 4189,
               "left": null,
               "right": null,
@@ -715,7 +715,7 @@ Node {
             "height": 1,
             "key": 5434,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 5376,
               "left": null,
               "right": null,
@@ -737,7 +737,7 @@ Node {
             "key": 5808,
             "left": null,
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 5912,
               "left": null,
               "right": null,
@@ -771,7 +771,7 @@ Node {
             "height": 1,
             "key": 6573,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 6523,
               "left": null,
               "right": null,
@@ -784,7 +784,7 @@ Node {
           "key": 6763,
           "left": null,
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 6823,
             "left": null,
             "right": null,
@@ -811,7 +811,7 @@ Node {
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 7272,
               "left": null,
               "right": null,
@@ -821,7 +821,7 @@ Node {
             "height": 1,
             "key": 7514,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 7463,
               "left": null,
               "right": null,
@@ -833,7 +833,7 @@ Node {
           "height": 2,
           "key": 7873,
           "left": Node {
-            "height": null,
+            "height": 0,
             "key": 7730,
             "left": null,
             "right": null,
@@ -843,7 +843,7 @@ Node {
             "key": 7904,
             "left": null,
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 7930,
               "left": null,
               "right": null,
@@ -861,7 +861,7 @@ Node {
             "height": 1,
             "key": 8140,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 7984,
               "left": null,
               "right": null,
@@ -877,13 +877,13 @@ Node {
             "height": 1,
             "key": 8253,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 8224,
               "left": null,
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 8343,
               "left": null,
               "right": null,
@@ -900,7 +900,7 @@ Node {
               "height": 1,
               "key": 8921,
               "left": Node {
-                "height": null,
+                "height": 0,
                 "key": 8774,
                 "left": null,
                 "right": null,
@@ -929,7 +929,7 @@ Node {
             "key": 9602,
             "left": null,
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 9859,
               "left": null,
               "right": null,
@@ -981,7 +981,7 @@ Node {
               "key": 389,
               "left": null,
               "right": Node {
-                "height": null,
+                "height": 0,
                 "key": 412,
                 "left": null,
                 "right": null,
@@ -992,7 +992,7 @@ Node {
             "height": 2,
             "key": 758,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 566,
               "left": null,
               "right": null,
@@ -1002,7 +1002,7 @@ Node {
               "key": 840,
               "left": null,
               "right": Node {
-                "height": null,
+                "height": 0,
                 "key": 900,
                 "left": null,
                 "right": null,
@@ -1071,7 +1071,7 @@ Node {
                 "right": null,
               },
               "right": Node {
-                "height": null,
+                "height": 0,
                 "key": 2196,
                 "left": null,
                 "right": null,
@@ -1082,7 +1082,7 @@ Node {
               "key": 2254,
               "left": null,
               "right": Node {
-                "height": null,
+                "height": 0,
                 "key": 2442,
                 "left": null,
                 "right": null,
@@ -1102,7 +1102,7 @@ Node {
                 "right": null,
               },
               "right": Node {
-                "height": null,
+                "height": 0,
                 "key": 2948,
                 "left": null,
                 "right": null,
@@ -1113,7 +1113,7 @@ Node {
               "key": 3028,
               "left": null,
               "right": Node {
-                "height": null,
+                "height": 0,
                 "key": 3045,
                 "left": null,
                 "right": null,
@@ -1147,7 +1147,7 @@ Node {
               "height": 1,
               "key": 3854,
               "left": Node {
-                "height": null,
+                "height": 0,
                 "key": 3721,
                 "left": null,
                 "right": null,
@@ -1165,7 +1165,7 @@ Node {
             "key": 4180,
             "left": null,
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 4192,
               "left": null,
               "right": null,
@@ -1191,7 +1191,7 @@ Node {
               "key": 4282,
               "left": null,
               "right": Node {
-                "height": null,
+                "height": 0,
                 "key": 4412,
                 "left": null,
                 "right": null,
@@ -1208,13 +1208,13 @@ Node {
             "height": 1,
             "key": 4613,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 4610,
               "left": null,
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 4634,
               "left": null,
               "right": null,
@@ -1228,20 +1228,20 @@ Node {
             "height": 1,
             "key": 4828,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 4796,
               "left": null,
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 4834,
               "left": null,
               "right": null,
             },
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 4958,
             "left": null,
             "right": null,
@@ -1258,20 +1258,20 @@ Node {
             "height": 1,
             "key": 5577,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 5477,
               "left": null,
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 5712,
               "left": null,
               "right": null,
             },
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 5807,
             "left": null,
             "right": null,
@@ -1281,7 +1281,7 @@ Node {
           "height": 2,
           "key": 6077,
           "left": Node {
-            "height": null,
+            "height": 0,
             "key": 6074,
             "left": null,
             "right": null,
@@ -1291,7 +1291,7 @@ Node {
             "key": 6079,
             "left": null,
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 6132,
               "left": null,
               "right": null,
@@ -1363,7 +1363,7 @@ Node {
             "height": 1,
             "key": 6873,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 6711,
               "left": null,
               "right": null,
@@ -1374,7 +1374,7 @@ Node {
             "height": 1,
             "key": 7004,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 6994,
               "left": null,
               "right": null,
@@ -1399,7 +1399,7 @@ Node {
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 7259,
               "left": null,
               "right": null,
@@ -1409,13 +1409,13 @@ Node {
             "height": 1,
             "key": 7488,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 7461,
               "left": null,
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 7663,
               "left": null,
               "right": null,
@@ -1432,7 +1432,7 @@ Node {
               "height": 1,
               "key": 7957,
               "left": Node {
-                "height": null,
+                "height": 0,
                 "key": 7923,
                 "left": null,
                 "right": null,
@@ -1450,7 +1450,7 @@ Node {
             "height": 1,
             "key": 8227,
             "left": Node {
-              "height": null,
+              "height": 0,
               "key": 8100,
               "left": null,
               "right": null,
@@ -1500,7 +1500,7 @@ Node {
               "right": null,
             },
             "right": Node {
-              "height": null,
+              "height": 0,
               "key": 9130,
               "left": null,
               "right": null,
@@ -1517,7 +1517,7 @@ Node {
             "right": null,
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 9290,
             "left": null,
             "right": null,
@@ -1537,7 +1537,7 @@ Node {
             "right": null,
           },
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 9401,
             "left": null,
             "right": null,
@@ -1548,7 +1548,7 @@ Node {
           "key": 9950,
           "left": null,
           "right": Node {
-            "height": null,
+            "height": 0,
             "key": 9954,
             "left": null,
             "right": null,
@@ -1580,7 +1580,7 @@ Node {
     "height": 1,
     "key": 19,
     "left": Node {
-      "height": null,
+      "height": 0,
       "key": 13,
       "left": null,
       "right": null,
@@ -1632,7 +1632,7 @@ Node {
       "height": 1,
       "key": 46,
       "left": Node {
-        "height": null,
+        "height": 0,
         "key": 42,
         "left": null,
         "right": null,
@@ -1694,7 +1694,7 @@ AVLTree {
       "height": 1,
       "key": 18,
       "left": Node {
-        "height": null,
+        "height": 0,
         "key": 16,
         "left": null,
         "right": null,
