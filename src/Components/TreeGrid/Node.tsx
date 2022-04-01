@@ -16,5 +16,5 @@ const Wrapper = styled.div<{ isVisible: boolean }>`
   text-align: center;
   line-height: 60px;
   visibility: ${({ isVisible }) => (isVisible ? 'visible' : 'hidden')};
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.colors.primary};
 `;

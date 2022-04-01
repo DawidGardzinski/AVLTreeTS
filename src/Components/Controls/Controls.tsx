@@ -28,7 +28,19 @@ export const Controls = ({ tree }: ControlsProps) => {
       <Divider />
       <Control type="delete" cb={testCb} />
       <Divider />
-      <Control type="search" cb={testCb} />
+      <Control
+        type="search"
+        cb={(key: number) => {
+          dispatch({
+            type: 'modalManipulation',
+            payload: {
+              type: 'search',
+              visibility: 'visible',
+              data: tree.search(key),
+            },
+          });
+        }}
+      />
       <Divider />
       <Dropdown
         options={[
