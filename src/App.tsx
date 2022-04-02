@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import { Modal } from './Components/Modal/Modal';
 import { VisualTree } from './Components/VisualTree/VisualTree';
 import { MainContextProvider } from './MainContext';
 
@@ -9,6 +10,7 @@ function App() {
     <MainContextProvider>
       <ThemeProvider theme={theme}>
         <VisualTree />
+        <Modal />
       </ThemeProvider>
     </MainContextProvider>
   );

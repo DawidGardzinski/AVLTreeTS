@@ -3,7 +3,7 @@ import { Button } from '../common';
 
 export const More = () => {
   return (
-    <Button>
+    <Button variant="ghost">
       <MoreIcon />
     </Button>
   );
