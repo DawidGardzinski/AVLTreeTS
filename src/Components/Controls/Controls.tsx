@@ -1,21 +1,14 @@
 import styled from 'styled-components';
-import { BST } from '../../dataStructures/BST/BST';
 import { useMainContext } from '../../hooks/useMainContext';
 import { Dropdown } from '../common';
 import { Control } from './Control';
 import { More } from './More';
 
-interface ControlsProps {
-  tree: BST;
-}
-
-export const Controls = ({ tree }: ControlsProps) => {
-  const { dispatch } = useMainContext();
-  const testCb = (key: number) => {
-    console.log(tree.getRoot());
-
-    dispatch({ type: 'enableTreeRerender' });
-  };
+export const Controls = () => {
+  const {
+    state: { tree },
+    dispatch,
+  } = useMainContext();
   return (
     <Wrapper>
       <Control
@@ -53,7 +46,13 @@ export const Controls = ({ tree }: ControlsProps) => {
           {
             label: 'Create from file',
             action: () => {
-              console.log('log');
+              dispatch({
+                type: 'modalManipulation',
+                payload: {
+                  type: 'upload',
+                  visibility: 'visible',
+                },
+              });
             },
           },
           {

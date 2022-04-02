@@ -1,5 +1,6 @@
 import { useMainContext } from '../../hooks/useMainContext';
 import { SearchModal } from './SearchModal';
+import { UploadModal } from './UploadModal';
 
 export const Modal = () => {
   const { state } = useMainContext();
@@ -7,12 +8,11 @@ export const Modal = () => {
 
   if (modal.visibility === 'hidden') return null;
 
-  if (modal.data) {
-    console.log(modal.data);
-  }
   switch (modal.type) {
     case 'search':
       return <SearchModal data={modal.data} />;
+    case 'upload':
+      return <UploadModal />;
     default:
       return null;
   }

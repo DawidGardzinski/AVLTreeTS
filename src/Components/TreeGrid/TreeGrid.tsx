@@ -1,20 +1,15 @@
 import { ReactElement, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { BST } from '../../dataStructures/BST/BST';
 import { useMainContext } from '../../hooks/useMainContext';
 import { Connections } from '../Connections/Connections';
 import { Node } from './Node';
 
-interface TreeGridProps {
-  tree: BST;
-}
-
-export const TreeGrid = ({ tree }: TreeGridProps) => {
+export const TreeGrid = () => {
+  const { state, dispatch } = useMainContext();
+  const { treeRerender, tree } = state;
   const treeHeight = tree.getRoot()?.height;
   const levelOrderWithNulls = tree.levelOrderWithNulls();
   const [isLoading, setLoading] = useState(true);
-  const { state, dispatch } = useMainContext();
-  const { treeRerender } = state;
 
   const nodeRefs = useRef<Array<HTMLDivElement | null>>([]);
 

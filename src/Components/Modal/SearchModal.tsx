@@ -15,7 +15,7 @@ export const SearchModal = ({ data }: SearchModalProps) => {
     dispatch({ type: 'closeModal' });
   };
 
-  if (!data)
+  if (!data) {
     return (
       <Curtain>
         <Dialog title={SEARCH_MODAL_TITLE} onClose={handleClose}>
@@ -23,6 +23,7 @@ export const SearchModal = ({ data }: SearchModalProps) => {
         </Dialog>
       </Curtain>
     );
+  }
   return (
     <Curtain>
       <Dialog title={SEARCH_MODAL_TITLE} onClose={handleClose}>
