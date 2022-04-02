@@ -58,7 +58,13 @@ export const Controls = () => {
           {
             label: 'Save on disk',
             action: () => {
-              console.log('log');
+              dispatch({
+                type: 'modalManipulation',
+                payload: {
+                  type: 'download',
+                  visibility: 'visible',
+                },
+              });
             },
           },
         ]}

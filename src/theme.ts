@@ -15,5 +15,6 @@ export const theme: DefaultTheme = {
     xs: '3px',
     s: '5px',
     m: '10px',
+    xxl: '20px',
   },
 };
