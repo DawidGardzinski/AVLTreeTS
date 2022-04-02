@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.078f7798.js",
-    "index.html": "/index.html",
-    "main.078f7798.js.map": "/static/js/main.078f7798.js.map"
+    "main.js": "/AVLTreeTS/static/js/main.58e39bec.js",
+    "index.html": "/AVLTreeTS/index.html",
+    "main.58e39bec.js.map": "/AVLTreeTS/static/js/main.58e39bec.js.map"
   },
   "entrypoints": [
-    "static/js/main.078f7798.js"
+    "static/js/main.58e39bec.js"
   ]
 }
