@@ -1,5 +1,7 @@
 //TODO: Overengineering... and not optimal (dbl rerender). refactor that.
-import React, { useReducer } from 'react';
+import React, { ReactElement, useReducer } from 'react';
+import { AVLTree } from './dataStructures/AVLTree/AVLTree';
+import { BST } from './dataStructures/BST/BST';
 import { Node } from './dataStructures/Node/Node';
 
 interface State {
@@ -9,6 +11,10 @@ interface State {
     visibility: 'visible' | 'hidden';
     data?: Node | null;
   };
+  toast?: {
+    text?: string;
+  };
+  tree: BST;
 }
 
 type Action =
@@ -22,7 +28,19 @@ type Action =
         data?: Node | null;
       };
     }
-  | { type: 'closeModal' };
+  | { type: 'closeModal' }
+  | {
+      type: 'toastManipulation';
+      payload: {
+        text: string;
+      };
+    }
+  | {
+      type: 'setTree';
+      payload: {
+        tree: BST;
+      };
+    };
 type Dispatch = (action: Action) => void;
 
 const defaultState: State = {
@@ -32,6 +50,7 @@ const defaultState: State = {
     visibility: 'hidden',
     data: null,
   },
+  tree: new AVLTree(),
 };
 
 export const MainContext = React.createContext<{
@@ -53,6 +72,19 @@ const mainReducer = (state: State, action: Action) => {
     case 'closeModal': {
       return { ...state, modal: defaultState.modal };
     }
+    case 'toastManipulation': {
+      return {
+        ...state,
+        toast: {
+          text: action.payload.text,
+        },
+      };
+    }
+    case `setTree`:
+      return {
+        ...state,
+        tree: action.payload.tree,
+      };
     default: {
       //@ts-ignore
       throw new Error(`Unhandled action type: ${action.type}`);
@@ -60,7 +92,11 @@ const mainReducer = (state: State, action: Action) => {
   }
 };
 
-export const MainContextProvider = ({ children }: any) => {
+export const MainContextProvider = ({
+  children,
+}: {
+  children: ReactElement;
+}) => {
   const [state, dispatch] = useReducer(mainReducer, defaultState);
   const value = { state, dispatch };
   return <MainContext.Provider value={value}>{children}</MainContext.Provider>;
